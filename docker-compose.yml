@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8081:8080"  # Mapping port 8080 inside the container to 8081 on your host
+    volumes:
+      - .:/app  # Mount your project directory for development
